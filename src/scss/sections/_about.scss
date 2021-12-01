@@ -1,0 +1,40 @@
+.about {
+}
+
+.about__top {
+  padding: 70px 0;
+
+  .wrapper {
+    display: flex;
+    gap: 73px 32px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.about__bottom {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 156px;
+    height: 100%;
+    background-image: url(../img/texture-2.svg);
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .benefits,
+    .promo {
+      width: calc(100% / 2);
+    }
+  }
+}

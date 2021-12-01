@@ -1,0 +1,32 @@
+.label {
+  max-width: 640px;
+}
+
+.label__title {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: $focus-2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  &:after {
+    content: "";
+    display: block;
+    width: 35%;
+    height: 2px;
+    background-color: $focus-2;
+  }
+}
+
+.label__details {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0;
+  color: $content-1;
+}

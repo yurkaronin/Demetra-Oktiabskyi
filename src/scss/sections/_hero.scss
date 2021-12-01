@@ -1,0 +1,141 @@
+.hero {
+  background-color: $bg-4;
+  background-image: url(../img/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $bg-1;
+  padding: 160px 0;
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-end;
+
+  &::before {
+    content: "";
+    background: linear-gradient(360deg, rgba(107, 48, 18, 0.4) 0%, rgba(107, 48, 18, 0) 100%),
+    linear-gradient(0deg, rgba(43, 27, 20, 0.15), rgba(43, 27, 20, 0.15));
+    ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 85%;
+    background-image: url(../img/texture-1.svg);
+    background-size: cover;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+  }
+
+}
+
+.hero__descr {
+  max-width: 950px;
+  z-index: 11;
+  position: relative;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 88px;
+  color: $bg-1;
+  margin: 0;
+  margin-bottom: 32px;
+
+}
+
+.hero__subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: $bg-1;
+  margin: 0;
+  position: relative;
+  padding-top: 24px;
+   max-width: 650px;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 47%;
+    height: 2px;
+    background-color: $focus-1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+}
+
+.hero__link {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  z-index: 11;
+
+  a {
+    background-color: $bg-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transition: $nfs;
+
+    svg {
+      position: absolute;
+      width: 16px;
+      height: 42px;
+      display: block;
+      transition: $nfs;
+
+      .custom-1 {
+        transition: $nfs;
+        fill: $focus-3;
+      }
+
+      .custom-2 {
+        stroke: $focus-3;
+        transition: $nfs;
+      }
+    }
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  a:hover,
+  a:focus {
+    background-color: $focus-3;
+    transition: $nfs;
+
+    .custom-1 {
+      transition: $nfs;
+      fill: $bg-1;
+    }
+
+    .custom-2 {
+      stroke: $bg-1;
+      transition: $nfs;
+    }
+  }
+}

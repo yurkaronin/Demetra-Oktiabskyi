@@ -1,0 +1,54 @@
+.benefits {
+  @include listReset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px 50px;
+  max-width: 640px;
+  align-items: baseline;
+  margin-bottom: 80px;
+
+  li {
+    max-width: calc((100% / 2) - 32px);
+  }
+
+  img {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin: 0;
+    padding-bottom: 45px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: $content-1;
+    position: relative;
+    min-height: 93px;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 35%;
+      height: 2px;
+      background-color: $focus-2;
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+    }
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 22px;
+    display: block;
+    line-height: 100%;
+    color: $content-1;
+
+    big {
+      font-size: 80px;
+      display: block;
+      line-height: 100%;
+    }
+  }
+}
