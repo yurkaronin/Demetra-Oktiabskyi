@@ -234,7 +234,8 @@
         <div class="hotline__right">
           <div class="label">
             <h2 class="label__title">горячая линия</h2>
-            <p class="label__details">Если Вам стало известно о фактах противоправных действий обратитесь на «Горячую линию»</p>
+            <p class="label__details">Если Вам стало известно о фактах противоправных действий обратитесь на «Горячую
+              линию»</p>
           </div>
           <div class="decorate">
             <a href="#" class="decorate__link">
@@ -254,6 +255,46 @@
 
     </div>
   </footer>
+
+  <!-- modals   -->
+  <div class="modals">
+    <div class="modal-overlay">
+
+      <!-- callback  -->
+      <section class="modal decorate-border" data-target="dialog-window-callback">
+        <div class="label">
+          <h2 class="label__title">совместный проект</h2>
+          <p class="label__details">Давайте начнем успешное партнерство.
+            Заполните простую форму, и мы свяжемся с вами в ближайшее время</p>
+        </div>
+        <form class="modals__form custom-form" action="" method="post">
+          <p class="">
+            <label for="CUST-FORM-NAME" class="custom-form__label">Ваше имя:</label>
+            <input class="custom-form__input" name="name" type="text" placeholder="Представьтесь, пожалуйста"
+              id="CUST-FORM-NAME" data-required required>
+          </p>
+          <p class="">
+            <label for="CUST-FORM-TEL" class="custom-form__label">Телефон:</label>
+            <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __"
+              id="CUST-FORM-TEL" data-required required>
+          </p>
+          <div class="">
+            <label class="custom-form__label custom-form__label--accept">
+              <input class="visually-hidden" type="checkbox" name="accept" checked>
+              <span class="custom-form__politic">Я выражаю свое согласие с <a href="#" class="link" target="_blank">
+                  Политикой конфиденциальности сайта</a> и даю право на обработку своих персональных данных</span>
+            </label>
+          </div>
+          <button class="custom-form__button button button--border js-validate" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">
+          <span></span>
+        </button>
+      </section>
+
+    </div> <!-- .modal-overlay -->
+  </div>
+
 
   <!-- scripts  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
