@@ -16,23 +16,31 @@
 
 <body>
   <header class="header">
-    <div class="wrapper">
+    <div class="wrapper header__wrapper">
       <!-- логотипы  -->
       <div class="header__logo">
         <img src="img/logo-1.svg" alt="">
         <img src="img/logo-2.svg" alt="">
       </div>
       <!-- меню  -->
-      <nav>
-        <ul class="header__nav">
-          <li><a href="#about-company">О компании</a></li>
-          <li><a href="#production">Производство</a></li>
-          <li><a href="#advance">Авансирование</a></li>
-          <li><a href="#documents">Документы</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-          <li><a href="#hotline">Горячая линия</a></li>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="#about-company" data-target="anchor">О
+              компании</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#production"
+              data-target="anchor">Производство</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#advance"
+              data-target="anchor">Авансирование</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#documents" data-target="anchor">Документы</a>
+          </li>
+          <li class="navigation__item"><a class="navigation__link" href="#contacts" data-target="anchor">Контакты</a>
+          </li>
+          <li class="navigation__item"><a class="navigation__link" href="#hotline" data-target="anchor">Горячая
+              линия</a></li>
+          </li>
         </ul>
       </nav>
+
       <!-- кнопка меню  -->
       <button class="button-menu" type="button">
         <span class="button-menu__toggle"></span>

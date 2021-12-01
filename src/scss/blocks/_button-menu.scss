@@ -1,0 +1,59 @@
+.button-menu {
+  display: none;
+
+  @media (max-width: 1350px) {
+    display: flex;
+    background-color: transparent;
+    position: absolute;
+    right: 48px;
+    padding: 28px 16px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+    z-index: 99;
+  }
+
+  span,
+  span::before,
+  span::after {
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background-color: $focus-1;
+  }
+
+  span::before,
+  span::after {
+    content: "";
+    display: block;
+    transition: $nfs;
+  }
+
+  span::before {
+    transform: translateY(-8px);
+  }
+
+  span::after {
+    transform: translateY(8px);
+  }
+}
+
+.button-menu.active {
+  &::after {
+    display: none;
+  }
+
+  span {
+    height: 0;
+  }
+
+  span:before {
+    transform: rotate(-45deg);
+  }
+
+  span:after {
+    transform: rotate(45deg);
+  }
+}

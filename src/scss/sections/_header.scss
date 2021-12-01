@@ -1,4 +1,85 @@
 .header {
   background-color: $bg-1;
   padding: 45px 0;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.header__logo {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  z-index: 99;
+  transition: 0.3s;
+
+  img {
+    display: block;
+    max-width: 210px;
+  }
+}
+
+.header__nav {
+  @include listReset;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  a {
+    font-family: $font-1;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: $content-2;
+
+    &:hover {
+      color: $focus-1;
+    }
+  }
+}
+
+.header.sticky {
+  border-color: $bg-5;
+  transition: 0.3s;
+
+}
+
+.header.active {
+  padding: 0;
+
+  @media (max-width: 1350px) {
+    .header__wrapper {
+      padding: 0;
+    }
+
+    .navigation {
+      left: 0;
+
+    }
+
+    .header__logo {
+      background-color: $bg-6;
+      padding: 45px 0;
+      z-index: 99;
+      width: 100%;
+      max-width: 100%;
+      padding-left: 48px;
+      padding-right: 48px;
+      transition: 0.3s;
+    }
+  }
 }

@@ -1,12 +1,1 @@
-<svg width="48" height="44" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.29 21.05L1 41.58" stroke="#6B3012" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M29.66 41.58L18 21.05" stroke="#6B3012" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22.8101 21L33.0001 37V43H47.0001V37L42.0001 32.68" stroke="#6B3012" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M36 27.5L28.48 21" stroke="#6B3012" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M39 15C42.866 15 46 11.866 46 8C46 4.13401 42.866 1 39 1C35.134 1 32 4.13401 32 8C32 11.866 35.134 15 39 15Z" stroke="#F8AA2B" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-<path d="M39 4V8H42" stroke="#F8AA2B" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M4 37H27" stroke="#6B3012" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-<path d="M8 30H23" stroke="#6B3012" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-<path d="M11 24H19" stroke="#6B3012" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M39 15V35" stroke="#F8AA2B" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-</svg>
+<svg width="48" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.29 21.05 1 41.58M29.66 41.58 18 21.05M22.81 21 33 37v6h14v-6l-5-4.32M36 27.5 28.48 21" stroke="#6B3012" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M39 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z" stroke="#F8AA2B" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/><path d="M39 4v4h3" stroke="#F8AA2B" stroke-width="2" stroke-miterlimit="10"/><path d="M4 37h23M8 30h15" stroke="#6B3012" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/><path d="M11 24h8" stroke="#6B3012" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M39 15v20" stroke="#F8AA2B" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/></svg>

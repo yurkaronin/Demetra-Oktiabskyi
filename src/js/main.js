@@ -11,36 +11,27 @@ window.onscroll = function showHeader() {
 }
 
 // кнопка меню
-var menuButton = document.querySelector('.button-menu');
+const menuButton = document.querySelector('.button-menu');
+const mainMenu = document.querySelector('.header');
+const menuLink = document.querySelectorAll('.navigation__link');
+
 if (menuButton) {
-  let mainMenu = document.querySelector('.mobile-main-nav');
   menuButton.addEventListener('click', function (r) {
     document.body.classList.toggle('custom-lock');
     menuButton.classList.toggle('active');
     mainMenu.classList.toggle('active');
   });
-}
+};
 
-// кнопка поиска в шапке
-let searchButton = document.querySelector('.button-search');
-if (searchButton) {
-  let headerSearch = document.querySelector('.header__search-form');
-  searchButton.addEventListener('click', function (r) {
-    searchButton.classList.toggle('active');
-    headerSearch.classList.toggle('active');
-  });
-}
-
-// кнопка аккордеона в меню
-let mobMenu = document.querySelectorAll(".main-nav-mobile");
-let subList = document.querySelectorAll(".sublist-nav");
-let subMenuButton = document.querySelectorAll('.toggle-btn').forEach((item) =>
-  item.addEventListener('click', () => {
-    item.classList.toggle('active');
-    subList.classList.toggle('active');
-    mobMenu.classList.toggle('active');
-  })
-);
+// свернуть меню при клике по пункту меню
+document.addEventListener('click', function (event) {
+  if (event.target.classList.contains('navigation__link')) {
+    mainMenu.classList.remove('active');
+    if (document.querySelector('.custom-lock')) {
+      document.querySelector('.custom-lock').classList.remove('custom-lock');
+    }
+  }
+});
 
 // Диалоговые окна
 const btns = document.querySelectorAll('.btn');
