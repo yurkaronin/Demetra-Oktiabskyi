@@ -1,0 +1,32 @@
+.documents-list {
+  @include listReset;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px 33px;
+
+  li {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 40px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: $content-1;
+
+    &::before {
+      content: url(../img/icon-10.svg);
+      position: absolute;
+      left: 0;
+      top: 5px;
+    }
+  }
+
+  a {
+    font-family: $font-1;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: $content-1;
+  }
+}

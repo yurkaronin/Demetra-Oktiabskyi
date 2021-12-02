@@ -1,5 +1,5 @@
 .advance {
-  background-color: $bg-4;
+  background-color: $content-1;
   padding: 0;
   color: $bg-1;
   background-image: url(../img/bg-5.jpg);
@@ -52,7 +52,7 @@
   }
 
   .advance__left {
-    padding: 111px 0 72px;
+    padding: 111px 0 100px;
   }
 
   .advance__right {
@@ -61,13 +61,17 @@
 
   .benefits {
     margin-bottom: 0;
-    gap: 75px 50px;
+    gap: 70px 50px;
   }
 
   .label__details,
   .benefits p,
   .benefits span {
     color: $bg-1;
+  }
+
+  .benefits p {
+    min-height: initial;
   }
 
   .custom-button {
