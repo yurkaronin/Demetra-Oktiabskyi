@@ -19,6 +19,20 @@
     z-index: 1;
   }
 
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/texture-1.svg);
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin: auto;
+    z-index: 2;
+  }
+
   .wrapper {
     display: grid;
     flex-wrap: wrap;
@@ -33,7 +47,7 @@
 
   .advance__left,
   .advance__right {
-    z-index: 1;
+    z-index: 5;
     position: relative;
   }
 
