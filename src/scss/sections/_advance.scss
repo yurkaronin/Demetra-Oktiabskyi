@@ -1,0 +1,69 @@
+.advance {
+  background-color: $bg-4;
+  padding: 0;
+  color: $bg-1;
+  background-image: url(../img/bg-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    background: linear-gradient(360deg, rgba(107, 48, 18, 0.4) 0%, rgba(107, 48, 18, 0) 100%), linear-gradient(0deg, rgba(43, 27, 20, 0.15), rgba(43, 27, 20, 0.15));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .wrapper {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .label {
+    max-width: 550px;
+    margin-bottom: 60px;
+  }
+
+  .advance__left,
+  .advance__right {
+    z-index: 1;
+    position: relative;
+  }
+
+  .advance__left {
+    padding: 111px 0 72px;
+  }
+
+  .advance__right {
+
+  }
+
+  .benefits {
+    margin-bottom: 0;
+    gap: 75px 50px;
+  }
+
+  .label__details,
+  .benefits p,
+  .benefits span {
+    color: $bg-1;
+  }
+
+  .custom-button {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-96px);
+    max-width: 416px;
+
+    .custom-button__left {
+      width: initial;
+    }
+  }
+}

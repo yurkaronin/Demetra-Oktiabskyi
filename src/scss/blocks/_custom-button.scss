@@ -1,0 +1,121 @@
+.custom-button {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: max-content;
+
+}
+
+.custom-button__left {
+  width: 305px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 31px 31px;
+  background-color: $bg-3;
+  transition: $nfs;
+}
+
+.custom-button__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  padding-bottom: 18px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 2px;
+    background-color: $focus-3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: $nfs;
+  }
+
+}
+
+.custom-button__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: $bg-4;
+  width: 192px;
+  height: 192px;
+  transition: $nfs;
+
+  svg {
+    display: block;
+    position: absolute;
+    width: 74px;
+    height: auto;
+    fill: $focus-1;
+    transition: $nfs;
+  }
+}
+
+.custom-button__left {
+  svg {
+    display: block;
+    margin-bottom: 15px;
+
+  }
+
+  .custom {
+    stroke: $focus-3;
+  }
+}
+
+.custom-button:hover {
+
+  .custom-button__text::after {
+    background-color: $bg-3;
+    transition: $nfs;
+  }
+
+  .custom-button__left,
+  .custom-button__right {
+    background-color: $focus-3;
+    transition: $nfs;
+
+  }
+
+  .custom-button__right svg {
+    fill: $bg-3;
+    transition: $nfs;
+  }
+
+    .custom {
+      stroke: $bg-3;
+      transition: $nfs;
+    }
+}
+
+.custom-button--2 {
+  .custom-button__left {
+    background-color: $focus-2;
+  }
+}
+
+.custom-button--3 {
+
+  .custom-button__left {
+    background-color: $bg-1;
+  }
+
+  .custom-button__text {
+    color: $content-1;
+  }
+
+  &:hover {
+    .custom {
+      stroke: $bg-1;
+    }
+    .custom-button__text {
+      color: $bg-1;
+    }
+  }
+}

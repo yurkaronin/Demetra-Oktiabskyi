@@ -31,7 +31,7 @@
   &::after {
     content: "";
     display: block;
-    width: 44%;
+    width: 50%;
     height: 100%;
     background-image: url(../img/bg-2.png);
     background-size: cover;
@@ -52,5 +52,11 @@
     .promo {
       width: calc(100% / 2);
     }
+  }
+
+  .custom-button {
+    position: absolute;
+    margin-left: 15px;
+    bottom: 0;
   }
 }

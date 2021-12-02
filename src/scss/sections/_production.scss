@@ -1,0 +1,21 @@
+.production {
+  background-color: $bg-6;
+  padding: 115px 0 124px;
+
+  .wrapper {
+    display: flex;
+    gap: 73px 32px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.production__left {
+  .label {
+    margin-bottom: 73px;
+  }
+  .label__title:after {
+    width: 28%;
+  }
+}
