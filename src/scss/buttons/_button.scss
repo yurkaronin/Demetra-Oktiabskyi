@@ -3,24 +3,17 @@
   justify-content: center;
   align-items: center;
   padding: 10px 16px 11px;
-  // background: $brand-1;
-  // border: 1px solid $brand-1;
   font-family: $font-1;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  // color: $base-bg;
   border-radius: 4px;
   max-width: max-content;
   text-decoration: none;
   transition: $nfs linear;
   cursor: pointer;
 
-  &:hover {
-    // background: $brand-3;
-    // border-color: $brand-3;
-  }
 }
 
 .button-transparent {
@@ -34,17 +27,10 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  // color: $brand-1;
   border-radius: 4px;
   max-width: max-content;
   text-decoration: none;
-  // border: 1px solid $brand-2;
   transition: $nfs linear;
   cursor: pointer;
 
-  &:hover {
-    // background: $brand-3;
-    // color: $base-bg;
-    // border-color: $brand-3;
-  }
 }

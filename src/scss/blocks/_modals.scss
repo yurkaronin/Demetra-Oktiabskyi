@@ -1,0 +1,126 @@
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00435b8c;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all $nfs ease-in-out;
+  z-index: 999;
+  overflow-y: auto;
+  text-align: center;
+  white-space: nowrap;
+  padding: 40px 15px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+  }
+}
+
+.modal-overlay>.modal {
+  font-size: 0;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.modal {
+  background-color: $bg-1;
+  align-items: center;
+  justify-content: center;
+  max-width: 752px;
+  padding: 54px 56px 56px;
+  position: relative;
+  display: none;
+  z-index: 1000;
+
+  @media (max-width: 900px) {
+    max-width: max-content;
+    padding: 35px 30px;
+  }
+}
+
+.modal--free {
+  padding: 0;
+  max-width: max-content;
+}
+
+.modal .custom-form {
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+
+    .custom-form__input,
+    .custom-form__item-wrapper {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.modal.decorate-border::after {
+  border-color: $bg-3;
+  z-index: 3;
+}
+
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all $nfs ease-in-out;
+}
+
+.modal--visible {
+  display: inline-block;
+}
+
+.modal-close {
+  border: none;
+  position: absolute;
+  padding: 20px;
+  top: -28px;
+  right: 56px;
+  z-index: 99;
+  cursor: pointer;
+
+  @media (max-width: 450px) {
+    right: 30px;
+  }
+}
+
+.modal-close span {
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: $bg-1;
+  z-index: 2;
+  transform: rotate(-45deg);
+  pointer-events: none;
+}
+
+.modal-close span::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: $bg-1;
+  z-index: 2;
+  transform: rotate(90deg);
+  display: block;
+  pointer-events: none;
+}
+
+.modal__subtitle {
+  color: $content-1;
+}
