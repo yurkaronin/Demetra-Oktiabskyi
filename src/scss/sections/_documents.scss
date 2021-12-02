@@ -1,5 +1,5 @@
 .documents {
-  padding: 110px 0 150px;
+  padding: 110px 0 100px;
   position: relative;
 
   &::after {
@@ -11,7 +11,7 @@
     background-size: cover;
     position: absolute;
     left: calc((100% - 1797px) / 2);
-    bottom: -50px;
+    bottom: -100px;
     z-index: 2;
   }
 
