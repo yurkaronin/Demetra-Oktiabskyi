@@ -22,15 +22,46 @@
     width: 156px;
     height: 100%;
     background-image: url(../img/texture-2.svg);
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     left: 0;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 44%;
+    height: 100%;
+    background-image: url(../img/bg-2.jpg);
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
     background-repeat: no-repeat;
   }
 
   .wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 70%;
+      height: 70%;
+      background-image: url(../img/texture-1.svg);
+      background-size: cover;
+      z-index: 2;
+      position: absolute;
+      left: 50%;
+      top: 8%;
+      margin: -10px 0;
+      z-index: -1;
+    }
 
     .benefits,
     .promo {
