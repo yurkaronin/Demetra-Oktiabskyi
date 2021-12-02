@@ -33,7 +33,7 @@
     display: block;
     width: 44%;
     height: 100%;
-    background-image: url(../img/bg-2.jpg);
+    background-image: url(../img/bg-2.png);
     background-size: cover;
     position: absolute;
     right: 0;
@@ -47,21 +47,6 @@
     justify-content: space-between;
     z-index: 1;
     position: relative;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 70%;
-      height: 70%;
-      background-image: url(../img/texture-1.svg);
-      background-size: cover;
-      z-index: 2;
-      position: absolute;
-      left: 50%;
-      top: 8%;
-      margin: -10px 0;
-      z-index: -1;
-    }
 
     .benefits,
     .promo {
