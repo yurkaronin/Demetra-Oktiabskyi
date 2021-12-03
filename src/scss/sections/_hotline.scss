@@ -14,6 +14,7 @@
 
 .hotline__details {
   padding: 128px;
+  padding-bottom: 0;
   background-image: url(../img/bg-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,6 +30,30 @@
     top: 0;
     left: 0;
     z-index: 1;
+  }
+
+  .label {
+    position: relative;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: flex-end;
+  }
+
+  .label__details {
+    margin-bottom: 70px;
+  }
+
+  .label__title {
+    color: $focus-3;
+    &::after {
+      background-color: $focus-3;
+    }
+  }
+
+  .label__details {
+    color: $bg-1;
   }
 
 }

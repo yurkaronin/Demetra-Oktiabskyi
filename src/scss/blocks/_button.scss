@@ -1,0 +1,23 @@
+.button {
+  background: $focus-2;
+  font-family: $font-1;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $bg-1;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  transition: 0.5s;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $focus-3;
+  }
+}

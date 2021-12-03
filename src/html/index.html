@@ -351,13 +351,31 @@
             <h2 class="label__title">горячая линия</h2>
             <p class="label__details">Если Вам стало известно о фактах противоправных действий обратитесь на «Горячую
               линию»</p>
-          </div>
-          <div class="decorate">
-            <a href="#" class="decorate__link">
-              <img src="img/icon-8.svg" alt="">
-              <span>Узнать подробнее о горячей линии</span>
+            <a class="custom-button custom-button--2 btn" data-path="dialog-window-callback" href="#">
+              <div class="custom-button__left">
+                <svg class="custom-button__icon" width="48" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10 34c-2.36 0-4-1.92-4-4.29v-1.43c0-2.37 1.64-4.29 4-4.29 2.36 0 4 1.92 4 4.29v1.43c0 2.37-1.64 4.29-4 4.29Z"
+                    stroke="#fff" stroke-width="2" stroke-miterlimit="10" />
+                  <path d="m1 46 2-8c.6-2.5 1.8-4 4-4h2l6.98 8h6s.45 4-3 4H13l-5-5" stroke="#fff" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linecap="round" />
+                  <path d="m17 39 4-7h18l-6 11h-9" stroke="#fff" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linejoin="round" />
+                  <path d="M9 46h30" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path class="custom"
+                    d="M38 18H26c-1.1 0-2-.9-2-2V3a2 2 0 0 1 2-2h19a2 2 0 0 1 2 2v13c0 1.11-.9 2.01-2.01 2.01H44v4c0 .92-1.14 1.35-1.75.66L38 18Z"
+                    stroke-width="2" stroke-miterlimit="10" />
+                  <path
+                    d="M35 15v-5a2 2 0 0 0-2-2h-6M24 8h-6a2 2 0 0 0-2 2v12c0 1.11.9 2.01 2.01 2.01H19v4c0 .92 1.14 1.35 1.75.66L25 24h8c1.1 0 2-.9 2-2v-4"
+                    stroke="#fff" stroke-width="2" stroke-miterlimit="10" /></svg>
+
+                <span class="custom-button__text">Узнать подробнее о горячей линии</span>
+              </div>
             </a>
           </div>
+
+
         </div>
       </div>
     </section>
@@ -383,24 +401,24 @@
             Заполните простую форму, и мы свяжемся с вами в ближайшее время</p>
         </div>
         <form class="modals__form custom-form" action="" method="post">
-          <p class="">
-            <label for="CUST-FORM-NAME" class="custom-form__label">Ваше имя:</label>
+
+          <label for="CUST-FORM-NAME" class="custom-form__label">
             <input class="custom-form__input" name="name" type="text" placeholder="Представьтесь, пожалуйста"
               id="CUST-FORM-NAME" data-required required>
-          </p>
-          <p class="">
-            <label for="CUST-FORM-TEL" class="custom-form__label">Телефон:</label>
+          </label>
+
+          <label for="CUST-FORM-TEL" class="custom-form__label">
             <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __"
               id="CUST-FORM-TEL" data-required required>
-          </p>
-          <div class="">
-            <label class="custom-form__label custom-form__label--accept">
-              <input class="visually-hidden" type="checkbox" name="accept" checked>
-              <span class="custom-form__politic">Я выражаю свое согласие с <a href="#" class="link" target="_blank">
-                  Политикой конфиденциальности сайта</a> и даю право на обработку своих персональных данных</span>
-            </label>
-          </div>
-          <button class="custom-form__button button button--border js-validate" type="submit">Отправить</button>
+          </label>
+
+          <label class="custom-form__label custom-form__label--accept">
+            <input class="visually-hidden" type="checkbox" name="accept" checked>
+            <span class="custom-form__politic">Я выражаю свое согласие с <a href="#" class="link" target="_blank">
+                Политикой конфиденциальности сайта</a> и даю право на обработку своих персональных данных</span>
+          </label>
+
+          <button class="button js-validate" type="submit">Отправить</button>
         </form>
         <button class="modal-close" type="button">
           <span></span>
