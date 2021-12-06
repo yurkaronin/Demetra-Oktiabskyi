@@ -19,7 +19,13 @@
     <div class="wrapper header__wrapper">
       <!-- логотипы  -->
       <div class="header__logo">
-        <img src="img/logo-1.svg" alt="">
+        <picture>
+          <source media="(max-width: 550px)" srcset="img/logo-1--min.svg">
+
+          <img src="img/logo-1.svg" alt="логотип" loading="lazy">
+        </picture>
+
+
         <img src="img/logo-2.svg" alt="">
       </div>
       <!-- меню  -->
@@ -69,7 +75,8 @@
       </div>
     </section>
     <!-- о компании  -->
-    <section class="about">
+    <section class="about" id="about-company">
+
       <div class="about__top">
         <div class="wrapper">
 
@@ -88,9 +95,10 @@
           </div>
         </div>
       </div>
+
       <div class="about__bottom">
         <div class="wrapper">
-          <ul class="benefits">
+          <ul class="benefits benefits--wrapper">
             <li>
               <img src="img/icon-1.svg" alt="">
               <p>Мощность единовременного хранения</p>
@@ -118,9 +126,8 @@
           </ul>
 
           <div class="promo">
-            <img class="promo__image" src="img/bg-2.jpg" alt="">
-
-            <a class="custom-button" href="#">
+            <img class="promo__image" src="img/content-1.jpg" alt="картинка" width="672" height="440">
+            <a class="custom-button btn" href="#" data-path="dialog-window-callback">
               <div class="custom-button__left">
                 <svg class="custom-button__icon" width="44" height="48" viewBox="0 0 44 48" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -179,9 +186,10 @@
           </div>
         </div>
       </div>
+
     </section>
 
-    <section class="production">
+    <section class="production" id="production">
       <div class="wrapper">
         <div class="production__left">
           <div class="label">
@@ -190,7 +198,7 @@
               (авто, ж/д). Наработаны собственные логистические схемы</p>
           </div>
           <div class="decorate">
-            <a class="custom-button" href="#">
+            <a class="custom-button btn" href="#" data-path="dialog-window-callback">
               <div class="custom-button__left">
                 <svg class="custom-button__icon" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -205,7 +213,7 @@
               </div>
 
             </a>
-            <a class="custom-button custom-button--2" href="#">
+            <a class="custom-button custom-button--2 btn" href="#" data-path="dialog-window-callback">
               <div class="custom-button__left">
                 <svg class="custom-button__icon" width="45" height="45" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 23v7M10 18v12M14 24v6M18 20v10" stroke="#fff" stroke-width="2" stroke-miterlimit="10" />
@@ -244,9 +252,11 @@
       </div>
     </section>
 
-    <section class="advance">
+    <section class="advance" id="advance">
+      <img class="advance__image" src="img/content-2.jpg" alt="картинка" width="672" height="440">
       <div class="wrapper">
         <div class="advance__left">
+
           <div class="label">
             <h2 class="label__title">авансирование</h2>
             <p class="label__details">Авансирование урожая
@@ -271,16 +281,14 @@
           </ul>
         </div>
         <div class="advance__right">
-          <a class="custom-button custom-button--3" href="#">
+          <a class="custom-button custom-button--3 btn" href="#" data-path="dialog-window-callback">
             <div class="custom-button__left">
 
               <svg class="custom-button__icon" width="47" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M10 33c-2.36 0-4-1.92-4-4.29v-1.43c0-2.37 1.64-4.29 4-4.29 2.36 0 4 1.92 4 4.29v1.43c0 2.37-1.64 4.29-4 4.29Z"
-                  stroke="#6B3012" stroke-width="2" stroke-miterlimit="10" />
-                <path
-                  d="M1 46c.57-3.21 1.22-6.45 1.22-6.45.48-2.77 2.57-3.93 4.28-3.93h1.04c1.97 0 3 1.87 3.71 2.92.71 1.05 1.71 2.48 1.71 2.48l4.34.67c2.5.53 2.2 4.25-.35 4.31h-6.3l-3.42-3.24M9 46h33M22.38 43h9.03L37 33H20.59l-3.19 5.7"
-                  stroke="#6B3012" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                <path class="custom-two"
+                  d="M10 33c-2.36 0-4-1.92-4-4.29v-1.43c0-2.37 1.64-4.29 4-4.29 2.36 0 4 1.92 4 4.29v1.43c0 2.37-1.64 4.29-4 4.29Z" stroke-width="2" stroke-miterlimit="10" />
+                <path class="custom-two"
+                  d="M1 46c.57-3.21 1.22-6.45 1.22-6.45.48-2.77 2.57-3.93 4.28-3.93h1.04c1.97 0 3 1.87 3.71 2.92.71 1.05 1.71 2.48 1.71 2.48l4.34.67c2.5.53 2.2 4.25-.35 4.31h-6.3l-3.42-3.24M9 46h33M22.38 43h9.03L37 33H20.59l-3.19 5.7" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
                   stroke-linejoin="round" />
                 <path class="custom"
                   d="M14 14c0-7.18 7.16-13 16-13s16 5.82 16 13-7.16 13-16 13c-1.81 0-3.55-.26-5.17-.71l-6.43 3.53.45-6.52C15.86 20.95 14 17.65 14 14ZM27.5 20h5"
@@ -299,7 +307,7 @@
       </div>
     </section>
 
-    <section class="documents">
+    <section class="documents" id="documents">
       <div class="wrapper">
         <div class="label">
           <h2 class="label__title">документы</h2>
@@ -321,7 +329,7 @@
         </ul>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="wrapper">
         <div class="label">
           <h2 class="label__title">Контакты</h2>
@@ -344,10 +352,12 @@
       </div>
     </section>
 
-    <section class="hotline">
-      <div class="wrapper">
+    <section class="hotline" id="hotline">
+
         <div id="map" class="hotline__map map"></div>
+        <img class="hotline__image" src="img/content-3.jpg" alt="картинка" width="6724" height="440">
         <div class="hotline__details">
+
           <div class="label">
             <h2 class="label__title">горячая линия</h2>
             <p class="label__details">Если Вам стало известно о фактах противоправных действий обратитесь на «Горячую
@@ -376,8 +386,6 @@
             </a>
           </div>
 
-
-        </div>
       </div>
     </section>
 
