@@ -16,42 +16,43 @@
 
 <body>
   <header class="header">
-    <div class="wrapper header__wrapper">
-      <!-- логотипы  -->
-      <div class="header__logo">
-        <picture>
-          <source media="(max-width: 550px)" srcset="img/logo-1--min.svg">
+  <div class="wrapper header__wrapper">
+    <!-- логотипы  -->
+    <a href="/" class="header__logo">
+      <picture>
+        <source media="(max-width: 550px)" srcset="img/logo-1--min.svg">
 
-          <img src="img/logo-1.svg" alt="логотип" loading="lazy">
-        </picture>
+        <img src="img/logo-1.svg" alt="логотип" loading="lazy">
+      </picture>
 
 
-        <img src="img/logo-2.svg" alt="">
-      </div>
-      <!-- меню  -->
-      <nav class="header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link" href="#about-company" data-target="anchor">О
-              компании</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#production"
-              data-target="anchor">Производство</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#advance"
-              data-target="anchor">Авансирование</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#documents" data-target="anchor">Документы</a>
-          </li>
-          <li class="navigation__item"><a class="navigation__link" href="#contacts" data-target="anchor">Контакты</a>
-          </li>
-          <li class="navigation__item"><a class="navigation__link" href="#hotline" data-target="anchor">Горячая
-              линия</a></li>
-          </li>
-        </ul>
-      </nav>
-      <!-- кнопка меню  -->
-      <button class="button-menu" type="button">
-        <span class="button-menu__toggle"></span>
-      </button>
-    </div>
-  </header>
+      <img src="img/logo-2.svg" alt="">
+    </a>
+    <!-- меню  -->
+    <nav class="header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="navigation__link" href="#about-company" data-target="anchor">О
+            компании</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#production"
+            data-target="anchor">Производство</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#advance" data-target="anchor">Авансирование</a>
+        </li>
+        <li class="navigation__item"><a class="navigation__link" href="#documents" data-target="anchor">Документы</a>
+        </li>
+        <li class="navigation__item"><a class="navigation__link" href="#contacts" data-target="anchor">Контакты</a>
+        </li>
+        <li class="navigation__item"><a class="navigation__link" href="/hotline.html">Горячая
+            линия</a></li>
+        </li>
+      </ul>
+    </nav>
+    <!-- кнопка меню  -->
+    <button class="button-menu" type="button">
+      <span class="button-menu__toggle"></span>
+    </button>
+  </div>
+</header>
+
 
   <main class="main">
     <!-- первый экран  -->
@@ -62,7 +63,7 @@
           <p class="hero__subtitle">Закупка зерна как на воротах элеватора и со складов СХТП Волгоградской области</p>
         </div>
         <div class="hero__link">
-          <a href="#about-company">
+          <a href="#about-company" data-target="anchor">
             <svg width="16" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="custom-1" d="M9 5v4H7V5z" />
               <rect class="custom-2" x="1" y="1" width="14" height="22" rx="5" stroke-width="2" />
@@ -362,7 +363,7 @@
             <h2 class="label__title">горячая линия</h2>
             <p class="label__details">Если Вам стало известно о фактах противоправных действий обратитесь на «Горячую
               линию»</p>
-            <a class="custom-button custom-button--2 btn" data-path="dialog-window-callback" href="#">
+            <a class="custom-button custom-button--2" href="/hotline.html">
               <div class="custom-button__left">
                 <svg class="custom-button__icon" width="48" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -391,51 +392,44 @@
 
 
   </main>
+   <!-- modals   -->
+<div class="modals">
+  <div class="modal-overlay">
 
-  <footer class="footer">
-    <div class="wrapper">
-
-    </div>
-  </footer>
-
-  <!-- modals   -->
-  <div class="modals">
-    <div class="modal-overlay">
-
-      <!-- callback  -->
-      <section class="modal decorate-border" data-target="dialog-window-callback">
-        <div class="label">
-          <h2 class="label__title">совместный проект</h2>
-          <p class="label__details">Давайте начнем успешное партнерство.
-            Заполните простую форму, и мы свяжемся с вами в ближайшее время</p>
+    <!-- callback  -->
+    <section class="modal decorate-border" data-target="dialog-window-callback">
+      <div class="label">
+        <h2 class="label__title">совместный проект</h2>
+        <p class="label__details">Давайте начнем успешное партнерство.
+          Заполните простую форму, и мы свяжемся с вами в ближайшее время</p>
+      </div>
+      <form class="modals__form custom-form" action="" method="post">
+        <div class="custom-form__item-wrapper">
+          <input class="custom-form__input" id="CUST-FORM-NAME-1" name="name" type="text"
+            placeholder="Представьтесь, пожалуйста" data-required required>
+          <label for="CUST-FORM-NAME-1" class="custom-label">Ваше имя <small>*</small> </label>
         </div>
-        <form class="modals__form custom-form" action="" method="post">
 
-          <label for="CUST-FORM-NAME" class="custom-form__label">
-            <input class="custom-form__input" name="name" type="text" placeholder="Представьтесь, пожалуйста"
-              id="CUST-FORM-NAME" data-required required>
-          </label>
+        <div class="custom-form__item-wrapper">
+          <input class="custom-form__input" type="tel" name="tel" placeholder="Телефон" id="CUST-FORM-TEL-1"
+            data-required required>
+          <label for="CUST-FORM-TEL-1" class="custom-label">Телефон <small>*</small> </label>
+        </div>
+        <label class="custom-form__label custom-form__label--accept">
+          <input class="visually-hidden" type="checkbox" name="accept" checked>
+          <span class="custom-form__politic">Я выражаю свое согласие с <a href="#" class="link" target="_blank">
+              Политикой конфиденциальности сайта</a> и даю право на обработку своих персональных данных</span>
+        </label>
 
-          <label for="CUST-FORM-TEL" class="custom-form__label">
-            <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __"
-              id="CUST-FORM-TEL" data-required required>
-          </label>
+        <button class="button js-validate" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">
+        <span></span>
+      </button>
+    </section>
 
-          <label class="custom-form__label custom-form__label--accept">
-            <input class="visually-hidden" type="checkbox" name="accept" checked>
-            <span class="custom-form__politic">Я выражаю свое согласие с <a href="#" class="link" target="_blank">
-                Политикой конфиденциальности сайта</a> и даю право на обработку своих персональных данных</span>
-          </label>
-
-          <button class="button js-validate" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">
-          <span></span>
-        </button>
-      </section>
-
-    </div> <!-- .modal-overlay -->
-  </div>
+  </div> <!-- .modal-overlay -->
+</div>
 
 
   <!-- scripts  -->
