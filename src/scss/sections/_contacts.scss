@@ -1,14 +1,26 @@
 .contacts {
   background-color: $bg-6;
-  padding: 150px 0 120px;
+  padding: 150px 0 114px;
+
+  @media (max-width: 768px) {
+    padding-top: 145px;
+    padding-bottom: 70px;
+  }
 
   .wrapper {
     display: grid;
     gap: 32px;
     grid-template-columns: 416px auto;
     align-items: flex-start;
-    @media (max-width: 1024px) {
+    @media (max-width: 1440px) {
       grid-template-columns: 1fr;
+      gap: 22px;
+    }
+  }
+
+  .label {
+    @media (max-width: 1440px) {
+      max-width: initial;
     }
   }
 
@@ -19,12 +31,19 @@
   .tel {
     margin-bottom: 13px;
     display: block;
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
   }
 
 }
 
  .contacts__details {
    margin-top: 35px;
+
+   @media (max-width: 768px) {
+     margin-top: 0;
+   }
  }
 
 .contacts__list {

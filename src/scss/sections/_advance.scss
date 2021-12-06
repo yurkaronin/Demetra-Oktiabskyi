@@ -38,6 +38,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .label {
@@ -76,9 +80,15 @@
 
   .custom-button {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     transform: translate(-96px);
     max-width: 416px;
+
+    @media (max-width: 1024px) {
+      transform: none;
+      right: 0;
+      max-width: 352px;
+    }
 
     .custom-button__left {
       width: initial;

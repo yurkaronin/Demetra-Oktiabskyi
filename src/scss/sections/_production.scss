@@ -2,27 +2,50 @@
   background-color: $bg-6;
   padding: 115px 0 124px;
 
+  @media (max-width: 768px) {
+    padding-top: 70px;
+  }
+
   .wrapper {
     display: flex;
     gap: 73px 32px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+
+    @media (max-width: 768px) {
+      gap: 36px;
+    }
   }
 
   .custom-button__left {
-    width: 100%;
+    @media (max-width: 1300px) {
+      width: 100%;
+    }
+
   }
   .text-part {
-    max-width: 100%;
+    @media (max-width: 1300px) {
+      max-width: 100%;
+    }
+  }
+
+  .decorate {
+    @media (max-width: 768px) {
+      gap: 32px;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 
 .production__left {
   .label {
     margin-bottom: 73px;
-    @media (max-width: 1024px) {
+    @media (max-width: 1300px) {
       max-width: initial;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
     }
   }
   .label__title:after {

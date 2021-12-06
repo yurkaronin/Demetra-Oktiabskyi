@@ -5,4 +5,8 @@
   font-size: 80px;
   line-height: 100%;
   color: $content-1;
+
+  @media (max-width: 768px) {
+    font-size: 64px;
+  }
 }

@@ -20,6 +20,10 @@
     width: 35%;
     height: 2px;
     background-color: $focus-2;
+
+    @media (max-width: 768px) {
+      width: 27%;
+    }
   }
 }
 

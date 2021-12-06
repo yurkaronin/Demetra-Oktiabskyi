@@ -9,27 +9,59 @@
     max-width: 100%;
     min-height: 725px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1300px) {
       grid-template-columns: 1fr;
     }
 
   }
 
   .map {
-    @media (max-width: 1024px) {
+    @media (max-width: 1300px) {
       min-height: 672px;
     }
   }
+
+  .custom-button__left {
+    @media (max-width: 1300px) {
+      width: 352px;
+    }
+
+  }
+
+  .custom-button {
+    width: 100%;
+    max-width: 416px;
+    grid-template-columns: auto;
+  }
+
+  .custom-button__left {
+    width: 100%;
+    padding: 35px 30px;
+    padding-right: 70px;
+
+    svg {
+      margin-bottom: 10px;
+    }
+  }
+
+
 }
 
 .hotline__details {
-  padding: 128px;
+  padding: 45px 128px;
   padding-bottom: 0;
   background-image: url(../img/bg-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
   position: relative;
+  min-height: 800px;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    min-height: 670px;
+    padding-bottom: 0;
+  }
 
   &::before {
     content: "";

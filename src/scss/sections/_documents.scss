@@ -2,6 +2,11 @@
   padding: 110px 0 100px;
   position: relative;
 
+  @media (max-width: 768px) {
+    padding-top: 72px;
+    padding-bottom: 108px;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -24,5 +29,9 @@
   }
   .documents-list {
     margin-bottom: 55px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 }
