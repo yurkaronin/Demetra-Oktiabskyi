@@ -1,4 +1,15 @@
 .about {
+  .label {
+    @media (max-width: 1024px) {
+      max-width: 100%;
+    }
+  }
+
+  .text-part {
+    @media (max-width: 1024px) {
+      max-width: 100%;
+    }
+  }
 }
 
 .about__top {
@@ -11,6 +22,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
 }
 
 .about__bottom {
@@ -26,6 +38,10 @@
     position: absolute;
     left: 0;
     background-repeat: no-repeat;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &::after {
@@ -39,6 +55,10 @@
     right: 0;
     top: 0;
     background-repeat: no-repeat;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   .wrapper {
@@ -48,9 +68,19 @@
     z-index: 1;
     position: relative;
 
+    @media (max-width: 1024px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     .benefits,
     .promo {
       width: calc(100% / 2);
+
+      @media (max-width: 1024px) {
+      width: 100%;
+      max-width: 100%;
+      }
     }
   }
 
@@ -58,5 +88,11 @@
     position: absolute;
     margin-left: 15px;
     bottom: 0;
+
+    @media (max-width: 1024px) {
+      bottom: initial;
+      top: 0;
+      margin-left: 48px;
+    }
   }
 }

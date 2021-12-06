@@ -160,23 +160,23 @@ if (elements) {
  });
 
  // Интерактивная карта с гео меткой
- let center = [45.013460, 38.958488];
+ let center = [47.959233, 43.666702];
 
  function init() {
 
    let map = new ymaps.Map("map", {
      center: center, // ваши данные
-     zoom: 15
+     zoom: 16
    });
 
-   let placemarRkschool = new ymaps.Placemark([45.013460, 38.958488], {}, {
+   let placemarRkschool = new ymaps.Placemark([47.959233, 43.666702], {}, {
      iconLayout: 'default#image',
      /* говорим что будем отображать на карте в качестве геометки  */
      iconImageHref: '../img/map/balun.svg',
      /* указываем пусть к картинке на нашем сайте  */
      iconImageSize: [56, 80],
      /* размеры картинки  */
-     iconImageOffset: [-19, -44] /* отступ от центра  */
+     iconImageOffset: [-29, -54] /* отступ от центра  */
    });
 
    map.controls.remove('geolocationControl'); // удаляем геолокацию

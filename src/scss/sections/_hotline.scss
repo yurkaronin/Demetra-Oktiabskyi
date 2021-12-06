@@ -7,8 +7,18 @@
     padding: 0;
     margin: 0;
     max-width: 100%;
-        min-height: 725px;
+    min-height: 725px;
 
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
+
+  }
+
+  .map {
+    @media (max-width: 1024px) {
+      min-height: 672px;
+    }
   }
 }
 
@@ -47,6 +57,7 @@
 
   .label__title {
     color: $focus-3;
+
     &::after {
       background-color: $focus-3;
     }

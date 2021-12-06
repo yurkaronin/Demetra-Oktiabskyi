@@ -9,11 +9,21 @@
     justify-content: space-between;
     align-items: flex-start;
   }
+
+  .custom-button__left {
+    width: 100%;
+  }
+  .text-part {
+    max-width: 100%;
+  }
 }
 
 .production__left {
   .label {
     margin-bottom: 73px;
+    @media (max-width: 1024px) {
+      max-width: initial;
+    }
   }
   .label__title:after {
     width: 28%;
