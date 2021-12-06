@@ -6,6 +6,11 @@
     padding-top: 70px;
   }
 
+  @media (max-width: 425px) {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
   .wrapper {
     display: flex;
     gap: 73px 32px;
@@ -34,6 +39,19 @@
     @media (max-width: 768px) {
       gap: 32px;
       grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 650px) {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+    }
+  }
+
+  .custom-button {
+    @media (max-width: 650px) {
+      width: 100%;
+      max-width: 100%;
+      display: block;
     }
   }
 }

@@ -13,6 +13,10 @@
   @media (max-width: 768px) {
     padding: 18px 0;
   }
+
+  @media (max-width: 425px) {
+    padding: 15px 0;
+  }
 }
 
 .header__wrapper {
@@ -33,6 +37,10 @@
   img {
     display: block;
     max-width: 210px;
+
+    @media (max-width: 700px) {
+      max-width: 163px;
+    }
   }
 }
 
@@ -59,6 +67,10 @@
 .header.sticky {
   border-color: $bg-5;
   transition: $nfs;
+
+  @media (max-width: 768px) {
+    padding: 10px 0;
+  }
 
 }
 

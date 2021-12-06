@@ -119,3 +119,11 @@
     }
   }
 }
+
+.custom-two {
+  stroke: $bg-3;
+  @media (max-width: 650px) {
+    stroke: $bg-1;
+  }
+
+}

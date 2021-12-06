@@ -1,5 +1,4 @@
 .hotline {
-  .wrapper {
     display: grid;
     gap: 0;
     grid-template-columns: 1fr 1fr;
@@ -13,12 +12,15 @@
       grid-template-columns: 1fr;
     }
 
-  }
 
   .map {
     @media (max-width: 1300px) {
       min-height: 672px;
     }
+
+     @media (max-width: 768px) {
+       min-height: 440px;
+     }
   }
 
   .custom-button__left {
@@ -63,6 +65,13 @@
     padding-bottom: 0;
   }
 
+  @media (max-width: 650px) {
+    background-image: none;
+    min-height: initial;
+    height: initial;
+    padding: 0 16px;
+  }
+
   &::before {
     content: "";
     background: linear-gradient(360deg, rgba(107, 48, 18, 0.4) 0%, rgba(107, 48, 18, 0) 100%), linear-gradient(0deg, rgba(43, 27, 20, 0.15), rgba(43, 27, 20, 0.15));
@@ -72,6 +81,10 @@
     top: 0;
     left: 0;
     z-index: 1;
+
+    @media (max-width: 650px) {
+      display: none;
+    }
   }
 
   .label {
@@ -97,6 +110,21 @@
 
   .label__details {
     color: $bg-1;
+
+    @media (max-width: 650px) {
+      color: $content-1;
+    }
+  }
+
+}
+
+.hotline__image {
+  display: none;
+  @media (max-width: 650px) {
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 31px;
   }
 
 }

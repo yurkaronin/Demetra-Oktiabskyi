@@ -52,8 +52,16 @@
   gap: 50px;
   flex-wrap: wrap;
 
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
+
   li {
     width: calc((100% / 2) - 32px);
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 }
 

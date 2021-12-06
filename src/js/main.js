@@ -201,3 +201,28 @@ if (elements) {
 
  ymaps.ready(init);
 
+ // //плавная прокрутка до блока js
+ const anchors = document.querySelectorAll('a[data-target^="anchor"]');
+
+ for (let anchor of anchors) {
+   anchor.addEventListener("click", function (e) {
+     e.preventDefault(); //отмена стандартного поведения элемента
+     const sectionTarget = anchor.getAttribute("href");
+     let targetOffset = document.querySelector("" + sectionTarget).offsetTop - 120;
+     window.scrollTo({
+       top: targetOffset,
+       behavior: "smooth"
+     });
+   });
+ }
+
+ // свернуть меню при клике по пункту меню
+ document.addEventListener('click', function (event) {
+   if (event.target.classList.contains('navigation__link')) {
+     menuButton.classList.remove('active');
+     if (document.querySelector('.custom-lock')) {
+       document.querySelector('.custom-lock').classList.remove('custom-lock');
+     }
+   }
+ });
+
