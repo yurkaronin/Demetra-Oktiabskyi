@@ -1,0 +1,30 @@
+.custom-label {
+  font-family: $font-1;
+  font-weight: 300;
+  font-size: 24px !important;
+  line-height: 100% !important;
+  color: $content-1;
+
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  transform: translateY(-50%);
+  transition: all $nfs ease;
+
+  @media (max-width: 750px) {
+    font-size: 20px !important;
+
+  }
+
+  small {
+    color: $focus-2;
+    font-family: $font-1;
+    font-weight: 300;
+    font-size: 24px !important;
+    line-height: 100% !important;
+  }
+}
+
+textarea + .custom-label {
+  top: 25%;
+}

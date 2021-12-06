@@ -117,15 +117,35 @@
 
         <form class="modals__form custom-form" action="" method="post">
           <div class="custom-form__wrapper custom-form__input-container">
-            <input class="custom-form__input" name="name" type="text" placeholder="Представьтесь, пожалуйста"
-              data-required required>
-            <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __" data-required
-              required>
-            <input class="custom-form__input" name="email" type="email" placeholder="E-mail" data-required required>
-            <input class="custom-form__input" type="text" name="company" placeholder="Компания" data-required required>
+
+            <div class="custom-form__item-wrapper">
+              <input class="custom-form__input" id="CUST-FORM-NAME-2" name="name" type="text"
+                placeholder="Представьтесь, пожалуйста" data-required required>
+              <label for="CUST-FORM-NAME-2" class="custom-label">Ваше имя <small>*</small> </label>
+            </div>
+
+            <div class="custom-form__item-wrapper">
+              <input class="custom-form__input" type="tel" name="tel" placeholder="Телефон" id="CUST-FORM-TEL-2"
+                data-required required>
+              <label for="CUST-FORM-TEL-2" class="custom-label">Телефон <small>*</small> </label>
+            </div>
+
+            <div class="custom-form__item-wrapper">
+              <input class="custom-form__input" id="CUST-FORM-EMAIL" name="name" type="email" placeholder="E-mail">
+              <label for="CUST-FORM-EMAIL" class="custom-label">E-mail</label>
+            </div>
+
+            <div class="custom-form__item-wrapper">
+              <input class="custom-form__input" name="name" type="text" placeholder="Компания" id="CUST-FORM-COMPANY">
+              <label for="CUST-FORM-COMPANY" class="custom-label">Компания</label>
+            </div>
+
           </div>
-          <textarea class="custom-form__input custom-form__input--textarea" name="textmessage"
-            rows="3">Сообщение*</textarea>
+          <div class="custom-form__item-wrapper">
+            <textarea class="custom-form__input custom-form__input--textarea" name="textmessage" rows="3"
+              placeholder="Сообщение" id="CUST-FORM-TEXTAREA-2"></textarea>
+            <label for="CUST-FORM-TEXTAREA-2" class="custom-label">Сообщение <small>*</small> </label>
+          </div>
           <div class="custom-form__wrapper custom-form__wrapper--bottom">
             <label class="custom-form__label custom-form__label--accept">
               <input class="visually-hidden" type="checkbox" name="accept" checked>

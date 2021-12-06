@@ -10,17 +10,17 @@
           Заполните простую форму, и мы свяжемся с вами в ближайшее время</p>
       </div>
       <form class="modals__form custom-form" action="" method="post">
+        <div class="custom-form__item-wrapper">
+          <input class="custom-form__input" id="CUST-FORM-NAME-1" name="name" type="text"
+            placeholder="Представьтесь, пожалуйста" data-required required>
+          <label for="CUST-FORM-NAME-1" class="custom-label">Ваше имя <small>*</small> </label>
+        </div>
 
-        <label for="CUST-FORM-NAME" class="custom-form__label">
-          <input class="custom-form__input" name="name" type="text" placeholder="Представьтесь, пожалуйста"
-            id="CUST-FORM-NAME" data-required required>
-        </label>
-
-        <label for="CUST-FORM-TEL" class="custom-form__label">
-          <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __"
-            id="CUST-FORM-TEL" data-required required>
-        </label>
-
+        <div class="custom-form__item-wrapper">
+          <input class="custom-form__input" type="tel" name="tel" placeholder="Телефон" id="CUST-FORM-TEL-1"
+            data-required required>
+          <label for="CUST-FORM-TEL-1" class="custom-label">Телефон <small>*</small> </label>
+        </div>
         <label class="custom-form__label custom-form__label--accept">
           <input class="visually-hidden" type="checkbox" name="accept" checked>
           <span class="custom-form__politic">Я выражаю свое согласие с <a href="#" class="link" target="_blank">

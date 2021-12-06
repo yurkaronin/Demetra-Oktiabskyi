@@ -175,43 +175,31 @@ input {
   color: $content-1;
   padding: 10px 22px 15px;
 
-  &::-webkit-input-placeholder {
-    color: $content-1;
-    font-family: $font-1;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-  }
-
-  &::-moz-placeholder {
-    color: $content-1;
-    font-family: $font-1;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-
-  }
-
-  /* Firefox 19+ */
-  &:-moz-placeholder {
-    color: $content-1;
-    font-family: $font-1;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-
-  }
-
-  /* Firefox 18- */
-  &:-ms-input-placeholder {
-    color: $content-1;
-    font-family: $font-1;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-
-  }
 }
+
+.custom-form__input::placeholder {
+  opacity: 0;
+}
+
+.custom-form__input:focus+.custom-label,
+.custom-form__input:active+.custom-label,
+.custom-form__input:not(:placeholder-shown)+.custom-label {
+  margin-top: -30px;
+  margin-left: -10px;
+  font-size: 12px !important;
+  line-height: 100% !important;
+  background-color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+.custom-form__input--textarea:focus+.custom-label,
+.custom-form__input--textarea:active+.custom-label,
+.custom-form__input--textarea:not(:placeholder-shown)+.custom-label {
+  margin-top: -35px;
+}
+
+
 
 .custom-form__label--accept {
   margin: 0;
