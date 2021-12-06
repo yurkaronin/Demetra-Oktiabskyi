@@ -163,65 +163,84 @@
     grid-template-columns: 1fr;
     gap: 32px;
   }
+}
 
-  input {
-    width: 100%;
-    background: $bg-1;
-    border: 1px solid $bg-7;
+input {
+  width: 100%;
+  background: $bg-1;
+  border: 1px solid $bg-7;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+  color: $content-1;
+  padding: 10px 22px 15px;
+
+  &::-webkit-input-placeholder {
+    color: $content-1;
+    font-family: $font-1;
+    font-style: normal;
     font-weight: 300;
     font-size: 24px;
-    line-height: 24px;
+  }
+
+  &::-moz-placeholder {
     color: $content-1;
-    padding: 10px 22px 15px;
-
-    &::-webkit-input-placeholder {
-      color: $content-1;
-    }
-
-    &::-moz-placeholder {
-      color: $content-1;
-    }
-
-    /* Firefox 19+ */
-    &:-moz-placeholder {
-      color: $content-1;
-    }
-
-    /* Firefox 18- */
-    &:-ms-input-placeholder {
-      color: $content-1;
-    }
-  }
-
-  .custom-form__label--accept input[type="checkbox"]+.custom-form__politic::before {
-    content: "";
-    background-image: url(../img/checkbox-off.svg);
-    position: absolute;
-    left: 0;
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-repeat: no-repeat;
-  }
-
-  .custom-form__label--accept input[type="checkbox"]:checked+.custom-form__politic::before {
-    background-image: url(../img/checkbox-on.svg);
-  }
-
-  .custom-form__label--accept {
-    margin: 0;
-    position: relative;
-    padding-left: 40px;
-  }
-
-  .custom-form__politic {
+    font-family: $font-1;
+    font-style: normal;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    color: #2B1B14;
+    font-size: 24px;
 
-    a {
-      color: $focus-2;
-    }
   }
+
+  /* Firefox 19+ */
+  &:-moz-placeholder {
+    color: $content-1;
+    font-family: $font-1;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+
+  }
+
+  /* Firefox 18- */
+  &:-ms-input-placeholder {
+    color: $content-1;
+    font-family: $font-1;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+
+  }
+}
+
+.custom-form__label--accept {
+  margin: 0;
+  position: relative;
+  padding-left: 40px;
+}
+
+.custom-form__politic {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2B1B14;
+
+  a {
+    color: $focus-2;
+  }
+}
+
+.custom-form__label--accept input[type="checkbox"]+.custom-form__politic::before {
+  content: "";
+  background-image: url(../img/checkbox-off.svg);
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.custom-form__label--accept input[type="checkbox"]:checked+.custom-form__politic::before {
+  background-image: url(../img/checkbox-on.svg);
 }

@@ -1,0 +1,38 @@
+<!-- modals   -->
+<div class="modals">
+  <div class="modal-overlay">
+
+    <!-- callback  -->
+    <section class="modal decorate-border" data-target="dialog-window-callback">
+      <div class="label">
+        <h2 class="label__title">совместный проект</h2>
+        <p class="label__details">Давайте начнем успешное партнерство.
+          Заполните простую форму, и мы свяжемся с вами в ближайшее время</p>
+      </div>
+      <form class="modals__form custom-form" action="" method="post">
+
+        <label for="CUST-FORM-NAME" class="custom-form__label">
+          <input class="custom-form__input" name="name" type="text" placeholder="Представьтесь, пожалуйста"
+            id="CUST-FORM-NAME" data-required required>
+        </label>
+
+        <label for="CUST-FORM-TEL" class="custom-form__label">
+          <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __"
+            id="CUST-FORM-TEL" data-required required>
+        </label>
+
+        <label class="custom-form__label custom-form__label--accept">
+          <input class="visually-hidden" type="checkbox" name="accept" checked>
+          <span class="custom-form__politic">Я выражаю свое согласие с <a href="#" class="link" target="_blank">
+              Политикой конфиденциальности сайта</a> и даю право на обработку своих персональных данных</span>
+        </label>
+
+        <button class="button js-validate" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">
+        <span></span>
+      </button>
+    </section>
+
+  </div> <!-- .modal-overlay -->
+</div>

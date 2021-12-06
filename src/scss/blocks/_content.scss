@@ -1,0 +1,42 @@
+.content {
+  padding: 60px 0;
+  background-color: #ffffff;
+  color: $content-1;
+
+  .label {
+    @media (max-width: 1024px) {
+      margin-bottom: 32px;
+    }
+  }
+
+}
+
+.content__wrapper {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+
+}
+
+.content__item {
+  max-width: calc((100% / 2) - 32px);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: $content-1;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    max-width: 100%;
+  }
+}
+
+.content--two {
+  background-color: $bg-6;
+  padding: 60px 0;
+}

@@ -18,3 +18,21 @@
     font-size: 28px;
   }
 }
+
+.email {
+  font-family: $font-1;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 100%;
+  color: $content-1;
+
+
+  @media (max-width: 650px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 28px;
+  }
+}
